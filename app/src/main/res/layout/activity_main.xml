@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradientui"
+    tools:context="com.zaphlabs.lovecalculator.MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="16sp"
+            android:paddingRight="16sp"
+            android:paddingTop="16sp">
+
+
+            <EditText
+            android:id="@+id/your_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:hint="Your Name"
+            android:inputType="textCapWords"
+            android:padding="8dp"
+                android:textColor="#ffff"
+                android:textColorHighlight="#ffff"
+                android:textColorLink="#ffff"
+            android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/her_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="Her/His Name"
+                android:inputType="textCapWords"
+                android:padding="8dp"
+                android:textColor="#ffff"
+                android:textColorHighlight="#ffff"
+                android:textColorLink="#ffff"
+                android:textSize="20sp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Get Suggestions:"
+                android:textColor="#ffff"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/Advise_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Want Advise!"
+                android:textColor="#ffff"
+                android:padding="8dp"
+                android:textSize="15dp" />
+
+
+            <CheckBox
+                android:id="@+id/Know_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Is she/he know you?"
+                android:textColor="#ffff"
+                android:padding="8dp"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/Commit_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Is she/he commited?"
+                android:textColor="#ffff"
+                android:textSize="15sp" />
+
+            <CheckBox
+                android:id="@+id/you_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Just for fun"
+                android:textColor="#ffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0%"
+                android:textColor="#ffff"
+                android:textSize="60dp"/>
+            <TextView
+                android:id="@+id/Show_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/adView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:hint="@string/suggestion"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+            <Button
+                android:id="@+id/Calculate_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttondesign"
+                android:text="Calculate"
+                android:textColor="#ffff"
+                android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/Reset_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/buttondesign"
+                    android:text="Reset"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#ffff"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+  <com.google.android.gms.ads.AdView
+
+
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer">
+    </com.google.android.gms.ads.AdView>
+
+
+
+
+</RelativeLayout>

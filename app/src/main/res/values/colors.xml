@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#16BFFD</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="primarytext">#212121</color>
+    <color name="secondarytext">#757575</color>
+    <color name="backgradstartcolor">#16BFFD</color>
+    <color name="backgraendclor">#CB3066</color>
+
+</resources>
